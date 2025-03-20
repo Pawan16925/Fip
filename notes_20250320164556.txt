@@ -1,0 +1,141 @@
+03.20 4:45 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawax Kushwaha - Official Bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #ff6f61, #de64a1);
+        }
+
+        .logo {
+            width: 180px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .title {
+            font-size: 1.1em;
+            color: #777;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: #f4f4f4;
+            border-radius: 50%;
+            color: #333;
+            font-size: 1.3em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-links a.twitter:hover { background: #1DA1F2; color: white; }
+        .social-links a.instagram:hover { background: #E1306C; color: white; }
+        .social-links a.linkedin:hover { background: #0077B5; color: white; }
+        .social-links a.facebook:hover { background: #4267B2; color: white; }
+        .social-links a.youtube:hover { background: #FF0000; color: white; }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .logo {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Pawax Kushwaha Logo" class="logo">
+        <h1>Pawax Kushwaha</h1>
+        <div class="title">Content Creator & Tech Enthusiast</div>
+        <p>Hi, I'm Pawax Kushwaha! I’m passionate about creating engaging content, exploring technology, and connecting with my community. Follow me on my socials to join my journey!</p>
+        <div class="social-links">
+            <a href="https://twitter.com/pawaxkushwaha" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/pawaxkushwaha" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/pawaxkushwaha" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://facebook.com/pawaxkushwaha" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@pawaxkushwaha" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Include Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</body>
+</html>
