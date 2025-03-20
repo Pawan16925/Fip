@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawax Kushwaha - Official Bio</title>
+    <title>Pawax Kushwaha - Tech Enthusiast</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -15,127 +14,199 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #2a5298, #1e3c72);
+            background-size: 400%;
+            animation: gradientAnimation 15s ease infinite;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             padding: 20px;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .container {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+            max-width: 600px;
             width: 100%;
-            padding: 40px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
+            padding: 40px 20px;
         }
 
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(to right, #ff6f61, #de64a1);
+        .profile-section {
+            margin-bottom: 40px;
         }
 
         .logo {
-            width: 180px;
+            width: 200px;
+            border-radius: 50%;
+            border: 4px solid #00ddeb;
+            box-shadow: 0 0 20px rgba(0, 221, 235, 0.5);
             margin-bottom: 20px;
             transition: transform 0.3s ease;
         }
 
         .logo:hover {
-            transform: scale(1.05);
+            transform: rotate(360deg);
         }
 
         h1 {
             font-size: 2.5em;
-            color: #333;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             margin-bottom: 10px;
-            font-weight: 600;
         }
 
         .title {
-            font-size: 1.1em;
-            color: #777;
+            font-size: 1.2em;
+            color: #00ddeb;
+            opacity: 0.9;
             margin-bottom: 20px;
-            font-style: italic;
-        }
-
-        p {
-            font-size: 1em;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 30px;
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
+            margin-bottom: 30px;
         }
 
         .social-links a {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 45px;
-            height: 45px;
-            background: #f4f4f4;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
-            color: #333;
-            font-size: 1.3em;
+            color: #fff;
+            font-size: 1.5em;
             text-decoration: none;
             transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .social-links a:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background: rgba(0, 221, 235, 0.3);
+            box-shadow: 0 0 15px rgba(0, 221, 235, 0.5);
         }
 
-        .social-links a.twitter:hover { background: #1DA1F2; color: white; }
-        .social-links a.instagram:hover { background: #E1306C; color: white; }
-        .social-links a.linkedin:hover { background: #0077B5; color: white; }
-        .social-links a.facebook:hover { background: #4267B2; color: white; }
-        .social-links a.youtube:hover { background: #FF0000; color: white; }
+        .social-links a.twitter:hover { color: #1DA1F2; }
+        .social-links a.instagram:hover { color: #E1306C; }
+        .social-links a.linkedin:hover { color: #0077B5; }
+        .social-links a.facebook:hover { color: #4267B2; }
+        .social-links a.youtube:hover { color: #FF0000; }
+
+        .link-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .link-button {
+            display: block;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .link-button:hover {
+            background: rgba(0, 221, 235, 0.2);
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 221, 235, 0.5);
+            border-color: #00ddeb;
+        }
+
+        .link-button i {
+            margin-right: 10px;
+            color: #00ddeb;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background: #00ddeb;
+            color: #1e3c72;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(0, 221, 235, 0.5);
+        }
+
+        .contact-button:hover {
+            background: #fff;
+            color: #1e3c72;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        footer {
+            color: #fff;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
 
         @media (max-width: 480px) {
-            .container {
-                padding: 20px;
-            }
             h1 {
                 font-size: 2em;
             }
             .logo {
                 width: 150px;
             }
+            .link-button {
+                font-size: 1em;
+                padding: 12px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="Pawax Kushwaha Logo" class="logo">
-        <h1>Pawax Kushwaha</h1>
-        <div class="title">Content Creator & Tech Enthusiast</div>
-        <p>Hi, I'm Pawax Kushwaha! I’m passionate about creating engaging content, exploring technology, and connecting with my community. Follow me on my socials to join my journey!</p>
-        <div class="social-links">
-            <a href="https://twitter.com/pawaxkushwaha" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com/pawaxkushwaha" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com/in/pawaxkushwaha" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://facebook.com/pawaxkushwaha" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://youtube.com/@pawaxkushwaha" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+        <div class="profile-section">
+            <img src="logo.png" alt="Pawax Kushwaha Logo" class="logo">
+            <h1>Pawax Kushwaha</h1>
+            <div class="title">@pawaxkushwaha | Tech Enthusiast</div>
+            <div class="social-links">
+                <a href="https://twitter.com/pawaxkushwaha" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/pawaxkushwaha" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/pawaxkushwaha" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://facebook.com/pawaxkushwaha" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/@pawaxkushwaha" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
+
+        <div class="link-buttons">
+            <a href="https://pawaxkushwaha.com" class="link-button"><i class="fas fa-globe"></i> My Tech Blog</a>
+            <a href="https://pawaxkushwaha.com/projects" class="link-button"><i class="fas fa-code"></i> My Projects</a>
+            <a href="https://pawaxkushwaha.com/tutorials" class="link-button"><i class="fas fa-book"></i> Tech Tutorials</a>
+            <a href="https://pawaxkushwaha.com/podcast" class="link-button"><i class="fas fa-podcast"></i> Tech Talk Podcast</a>
+            <a href="https://pawaxkushwaha.com/newsletter" class="link-button"><i class="fas fa-envelope"></i> Tech Newsletter</a>
+        </div>
+
+        <a href="mailto:pawaxkushwaha@example.com" class="contact-button">Get in Touch</a>
+
+        <footer>© 2025 Pawax Kushwaha. All Rights Reserved.</footer>
     </div>
 
     <!-- Include Google Fonts for Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </body>
 </html>
